@@ -1,8 +1,11 @@
 **SIGE: Sistema Integral de Gestión Ecuestre** 
+
 SIGE es una solución tecnológica desarrollada en Python diseñada para automatizar y centralizar la administración operativa, clínica y financiera de instalaciones ecuestres. El sistema permite pasar de registros manuales a una gestión digital eficiente, facilitando la toma de decisiones estratégicas mediante el análisis de datos.
 
 **Alcance de la Herramienta**
+
 **Gestión Clínica**
+
 • Bitácora Médica: Seguimiento de protocolos preventivos como herrajes y vacunas.
 • Sistema de Semáforo: Indicadores visuales sobre el estado de salud y vencimientos.
 • Generación de Recetas: Exportación de raciones y tratamientos en archivos de texto.

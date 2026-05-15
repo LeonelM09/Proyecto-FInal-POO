@@ -1,0 +1,15 @@
+==================================================
+      SISTEMA INTEGRAL DE GESTIÓN ECUESTRE (SIGE)      
+              REPORTE MÉDICO COMPLETO                  
+==================================================
+
+PACIENTE (EQUINO): Relámpago
+RAZA: Pura Sangre
+--------------------------------------------------
+
+HISTORIAL DE TRATAMIENTOS:
+- 2026-05-01 | Vacuna: Tratamiento programado (01/05/2026) realizado exitosamente.
+
+
+               __________________________
+                  Firma del Responsable

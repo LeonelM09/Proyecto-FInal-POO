@@ -1,0 +1,11 @@
+SISTEMA INTEGRAL DE GESTIÓN ECUESTRE (SIGE)
+ESTADO DE CUENTA: Juan Perez
+----------------------------------------
+Fecha        | Monto      | Estado    
+2026-05-12   | $2000.0    | Pagado
+2026-05-12   | $3000.0    | Pagado
+2026-05-12   | $1000.0    | Pagado
+2026-05-12   | $1500.0    | Pagado
+----------------------------------------
+TOTAL PENDIENTE DE PAGO: $0
+Reporte generado el: 13/05/2026

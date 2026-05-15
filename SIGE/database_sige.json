@@ -1,0 +1,330 @@
+{
+    "usuarios": [
+        {
+            "id_usuario": "admin01",
+            "nombre": "Leonel Matos",
+            "contrase\u00f1a": "123",
+            "rol": "Administrador Principal",
+            "contacto": "555-0000"
+        },
+        {
+            "id_usuario": "caballerango01",
+            "nombre": "Juan L\u00f3pez",
+            "contrase\u00f1a": "123",
+            "rol": "Personal Operativo",
+            "contacto": "222222"
+        },
+        {
+            "id_usuario": "recepcionista01",
+            "nombre": "Dana Juarez",
+            "contrase\u00f1a": "123",
+            "rol": "Recepcionista",
+            "contacto": "222222"
+        }
+    ],
+    "clientes": [
+        {
+            "id_cliente": "CL-001",
+            "nom_completo": "Juan Perez",
+            "contacto": "555-1234",
+            "term_pension": "Pensi\u00f3n B\u00e1sica"
+        },
+        {
+            "id_cliente": "CL-002",
+            "nom_completo": "Annie de Matos",
+            "contacto": "123",
+            "term_pension": "Pensi\u00f3n completa"
+        }
+    ],
+    "equinos": [
+        {
+            "id_equino": "EQ-001",
+            "id_cliente": "CL-001",
+            "nombre": "Rel\u00e1mpago",
+            "raza": "Pura Sangre",
+            "cab_asig": "C-12",
+            "etapa": "Iniciaci\u00f3n",
+            "ruta_imagen": "c:\\Users\\Matos\\OneDrive\\Escritorio\\SIGE\\imagenes_equinos\\rel\u00e1mpago.jpg",
+            "sexo": "Castrado",
+            "pelaje": "Alaz\u00e1n",
+            "nacimiento": "12/05/2018",
+            "microchip": "MX-123456",
+            "especie": "Caballo",
+            "id_registro": "CAB-001",
+            "descripcion_equino": "Caballo de gran agilidad y buen temperamento.",
+            "dias_trabajados": [
+                "2026-05-01",
+                "2026-05-03",
+                "2026-05-09",
+                "2026-05-08",
+                "2026-05-13",
+                "2026-05-14"
+            ],
+            "alimentacion": "Pasto (Ma\u00f1ana/Tarde) y 2kg de grano est\u00e1ndar.",
+            "historial_medico": [
+                {
+                    "fecha": "2026-05-01",
+                    "tipo": "Vacuna",
+                    "desc": "Tratamiento programado (01/05/2026) realizado exitosamente."
+                }
+            ],
+            "fechas_medicas": {
+                "Herraje": "18/05/2026",
+                "Desparasitaci\u00f3n": "10/06/2026",
+                "Odontolog\u00eda": "02/11/2026",
+                "Vacuna": "14/05/2027"
+            }
+        },
+        {
+            "id_equino": "EQ-002",
+            "id_cliente": "CL-002",
+            "nombre": "Yolo",
+            "raza": "Mixteco",
+            "cab_asig": "C-11",
+            "etapa": "Iniciaci\u00f3n",
+            "ruta_imagen": "c:\\Users\\Matos\\OneDrive\\Escritorio\\SIGE\\imagenes_equinos\\yolo.jpeg",
+            "sexo": "Yegua",
+            "pelaje": "Gris",
+            "nacimiento": "01/01/2015",
+            "microchip": "Sin microchip",
+            "especie": "Burro",
+            "id_registro": "BUR-001",
+            "descripcion_equino": "Muy trabajador y resistente.",
+            "dias_trabajados": [
+                "2026-05-08"
+            ],
+            "alimentacion": "Pasto (Ma\u00f1ana/Tarde) y 2kg de grano est\u00e1ndar.",
+            "historial_medico": [
+                {
+                    "fecha": "2026-05-10",
+                    "tipo": "Herraje",
+                    "desc": "Dosis: Cambio de herrajes | Notas: Posible hormiguillo en la mano izquierda"
+                }
+            ],
+            "fechas_medicas": {
+                "Herraje": "24/06/2026",
+                "Desparasitaci\u00f3n": "10/06/2026",
+                "Odontolog\u00eda": "02/11/2026"
+            }
+        },
+        {
+            "id_equino": "EQ-003",
+            "id_cliente": "CL-001",
+            "nombre": "Juan",
+            "raza": "Pura Sangre",
+            "cab_asig": "C-14",
+            "etapa": "Iniciaci\u00f3n",
+            "ruta_imagen": "c:\\Users\\Matos\\OneDrive\\Escritorio\\SIGE\\imagenes_equinos\\juan.jpg",
+            "sexo": "Caballo",
+            "pelaje": "Zaino",
+            "nacimiento": "15/03/2019",
+            "microchip": "MX-555444",
+            "especie": "Caballo",
+            "id_registro": "CAB-002",
+            "descripcion_equino": "D\u00f3cil para paseos.",
+            "dias_trabajados": [
+                "2026-05-01"
+            ],
+            "alimentacion": "Pasto (Ma\u00f1ana/Tarde) y 2kg de grano est\u00e1ndar.",
+            "historial_medico": [],
+            "fechas_medicas": {
+                "Herraje": "16/05/2026",
+                "Desparasitaci\u00f3n": "08/06/2026",
+                "Odontolog\u00eda": "31/10/2026"
+            }
+        },
+        {
+            "id_equino": "EQ-004",
+            "id_cliente": "CL-002",
+            "nombre": "Suzume",
+            "raza": "Gato",
+            "cab_asig": "C -13",
+            "etapa": "Ninguna",
+            "ruta_imagen": "c:\\Users\\Matos\\OneDrive\\Escritorio\\SIGE\\imagenes_equinos\\suzume.jpeg",
+            "sexo": "Yegua",
+            "pelaje": "Atigrado",
+            "nacimiento": "20/05/2020",
+            "microchip": "Ninguno",
+            "especie": "Otro",
+            "id_registro": "REG-001",
+            "descripcion_equino": "Gato de la caballeriza.",
+            "dias_trabajados": [],
+            "alimentacion": "Pasto (Ma\u00f1ana/Tarde) y 2kg de grano est\u00e1ndar.",
+            "historial_medico": [
+                {
+                    "fecha": "2026-09-02",
+                    "tipo": "Vacuna",
+                    "desc": "Dosis: 1 vacuna | Notas: Grita mucho"
+                }
+            ],
+            "fechas_medicas": {
+                "Herraje": "24/05/2026",
+                "Desparasitaci\u00f3n": "16/06/2026",
+                "Odontolog\u00eda": "08/11/2026",
+                "Vacuna": "02/09/2027"
+            }
+        }
+    ],
+    "bitacoras": [],
+    "finanzas": [
+        {
+            "id_pago": "PAG-4255",
+            "id_cliente": "CL-001",
+            "monto": 2000.0,
+            "fecha_pago": "2026-05-12",
+            "estado": "Pagado"
+        },
+        {
+            "id_pago": "PAG-0006",
+            "id_cliente": "CL-001",
+            "monto": 3000.0,
+            "fecha_pago": "2026-05-12",
+            "estado": "Pagado"
+        },
+        {
+            "id_pago": "PAG-5223",
+            "id_cliente": "CL-001",
+            "monto": 1000.0,
+            "fecha_pago": "2026-05-12",
+            "estado": "Pagado"
+        },
+        {
+            "id_pago": "PAG-3451",
+            "id_cliente": "CL-001",
+            "monto": 1500.0,
+            "fecha_pago": "2026-05-12",
+            "estado": "Pagado",
+            "servicio": "Entrenamiento"
+        },
+        {
+            "id_pago": "PAG-5435",
+            "id_cliente": "CL-002",
+            "monto": 2000.0,
+            "fecha_pago": "2026-05-13",
+            "estado": "Pendiente",
+            "servicio": "Venta de Insumos"
+        },
+        {
+            "id_pago": "PAG-5459",
+            "id_cliente": "CL-002",
+            "monto": 2000.0,
+            "fecha_pago": "2026-05-13",
+            "estado": "Pagado",
+            "servicio": "Venta de Insumos"
+        }
+    ],
+    "caballerizas": [],
+    "alertas": [],
+    "inventario": [
+        {
+            "nombre": "Pacas de Pasto (Avena/Alfalfa)",
+            "cantidad": 45,
+            "caducidad": "N/A",
+            "ultimo_abastecimiento": "13/05/2026",
+            "descripcion": "Pasto de alta calidad para alimentaci\u00f3n diaria."
+        },
+        {
+            "nombre": "Grano est\u00e1ndar (Bultos 20kg)",
+            "cantidad": 15,
+            "caducidad": "15/08/2026",
+            "ultimo_abastecimiento": "12/05/2026",
+            "descripcion": "Mezcla de granos balanceada."
+        },
+        {
+            "nombre": "Suplemento Vitam\u00ednico (Bote 5kg)",
+            "cantidad": 12,
+            "caducidad": "20/12/2026",
+            "ultimo_abastecimiento": "10/05/2026",
+            "descripcion": "Suplemento para mejorar el rendimiento."
+        },
+        {
+            "nombre": "Desparasitante Oral (Jeringas)",
+            "cantidad": 25,
+            "caducidad": "01/01/2027",
+            "ultimo_abastecimiento": "01/05/2026",
+            "descripcion": "Tratamiento contra par\u00e1sitos internos."
+        },
+        {
+            "nombre": "Vendas de Descanso (Paquete)",
+            "cantidad": 8,
+            "caducidad": "N/A",
+            "ultimo_abastecimiento": "15/04/2026",
+            "descripcion": "Vendas para protecci\u00f3n de extremidades."
+        },
+        {
+            "nombre": "Aceite de Linaza (Garrafa 5L)",
+            "cantidad": 10,
+            "caducidad": "10/11/2026",
+            "ultimo_abastecimiento": "05/05/2026",
+            "descripcion": "Aceite para brillo de pelaje y salud digestiva."
+        },
+        {
+            "nombre": "Grano de Alta Energ\u00eda (Bulto 20kg)",
+            "cantidad": 20,
+            "caducidad": "30/09/2026",
+            "ultimo_abastecimiento": "12/05/2026",
+            "descripcion": "Ideal para caballos en entrenamiento intenso."
+        },
+        {
+            "nombre": "Antibi\u00f3tico T\u00f3pico (Spray)",
+            "cantidad": 15,
+            "caducidad": "15/06/2027",
+            "ultimo_abastecimiento": "10/05/2026",
+            "descripcion": "Para tratar heridas superficiales."
+        },
+        {
+            "nombre": "Electrolitos en Polvo (Bote 2kg)",
+            "cantidad": 18,
+            "caducidad": "01/02/2027",
+            "ultimo_abastecimiento": "01/05/2026",
+            "descripcion": "Ayuda a la recuperaci\u00f3n despu\u00e9s del ejercicio."
+        },
+        {
+            "nombre": "Champ\u00fa para Equinos (Bid\u00f3n 4L)",
+            "cantidad": 6,
+            "caducidad": "N/A",
+            "ultimo_abastecimiento": "20/04/2026",
+            "descripcion": "Limpieza profunda y cuidado del pelaje."
+        },
+        {
+            "nombre": "Protector de Cascos (Grasa)",
+            "cantidad": 22,
+            "caducidad": "10/10/2027",
+            "ultimo_abastecimiento": "12/05/2026",
+            "descripcion": "Mantiene los cascos hidratados y fuertes."
+        },
+        {
+            "nombre": "Sedante Suave (Uso Veterinario)",
+            "cantidad": 4,
+            "caducidad": "05/05/2028",
+            "ultimo_abastecimiento": "10/05/2026",
+            "descripcion": "Para procedimientos m\u00e9dicos menores."
+        }
+    ],
+    "mapa_caballerizas": [
+        [
+            true,
+            true,
+            true,
+            true
+        ],
+        [
+            false,
+            false,
+            false,
+            false
+        ],
+        [
+            false,
+            false,
+            false,
+            false
+        ],
+        [
+            false,
+            false,
+            false,
+            false
+        ]
+    ]
+}

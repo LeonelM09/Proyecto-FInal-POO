@@ -20,7 +20,6 @@ from backend import (
     CARPETA_RECETAS, CARPETA_REPORTES
 )
 
-
 # ========================================================================
 # 1. CONFIGURACIÓN VISUAL Y DE RUTAS DEL SIGE
 # ========================================================================
@@ -250,10 +249,14 @@ def vista_dashboard(frame_contenido, rol, nombre):
                             hover_color="#334155", height=40, font=("Roboto", 13), command=cmd)
         btn.pack(fill="x", padx=20, pady=5)
 
-    add_quick_link("🍎", "Dar de Comer Hoy", lambda: vista_bitacora(frame_contenido, vista_inicial="alimentacion"))
-    add_quick_link("📅", "Agenda Médica", lambda: vista_bitacora(frame_contenido, vista_inicial="ficha"))
+    if rol != "Recepcionista":
+        add_quick_link("🍎", "Dar de Comer Hoy", lambda: vista_bitacora(frame_contenido, vista_inicial="alimentacion"))
+        add_quick_link("📅", "Agenda Médica", lambda: vista_bitacora(frame_contenido, vista_inicial="ficha"))
+    
     add_quick_link("📦", "Revisar Stock Bajo", lambda: vista_inventario(frame_contenido))
-    add_quick_link("👥", "Directorio Clientes", lambda: vista_clientes(frame_contenido))
+    
+    if rol != "Personal Operativo":
+        add_quick_link("👥", "Directorio Clientes", lambda: vista_clientes(frame_contenido))
 
     # Obtenemos las alertas en tiempo real
     alertas_pendientes = Alerta_sistema.obtener_alertas_dinamicas()
@@ -2271,6 +2274,8 @@ def iniciar_dashboard(ventana, rol_usuario, nombre_usuario):
     if rol_usuario in ["Administrador Principal", "Recepcionista"]:
         add_menu_btn("Directorio de clientes", lambda: vista_clientes(frame_contenido))
         add_menu_btn("Finanzas", lambda: vista_finanzas(frame_contenido))
+
+    if rol_usuario in ["Administrador Principal", "Recepcionista", "Personal Operativo"]:
         add_menu_btn("Inventario", lambda: vista_inventario(frame_contenido))
 
     ctk.CTkLabel(frame_lateral, text="").pack(expand=True)

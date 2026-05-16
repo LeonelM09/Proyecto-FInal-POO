@@ -20,6 +20,7 @@ from backend import (
     CARPETA_RECETAS, CARPETA_REPORTES
 )
 
+
 # ========================================================================
 # 1. CONFIGURACIÓN VISUAL Y DE RUTAS DEL SIGE
 # ========================================================================
@@ -867,7 +868,7 @@ def sub_vista_equinos_crear(frame_contenido):
     limpiar_contenedor(frame_contenido)
     global ruta_imagen_temporal; ruta_imagen_temporal = None 
 
-    panel_fields = ctk.CTkScrollableFrame(frame_contenido, fg_color="transparent")
+    panel_fields = ctk.CTkScrollableFrame(frame_contenido, fg_color="transparent", label_text="Registro de Nuevo Equino")
     panel_fields.pack(side="left", fill="both", expand=True, padx=20)
 
     # Carga de catálogos desde el backend
@@ -1828,6 +1829,7 @@ def vista_finanzas(frame_contenido):
                         plt.close(fig)
         except: 
             pass
+
     def subvista_registrar_pago(parent):
         """Formulario para la captura de nuevos movimientos financieros."""
         limpiar_contenedor(parent)
@@ -1925,6 +1927,7 @@ def vista_finanzas(frame_contenido):
         btn.pack(fill="x", padx=10, pady=5); btns_fin[txt] = btn
 
     select_finance_tab("📈 RESUMEN", sub_vista_resumen)
+
 
 # ========================================================================
 # 8. INVENTARIO (CONTROL DE SUMINISTROS)
@@ -2297,7 +2300,6 @@ def iniciar_dashboard(ventana, rol_usuario, nombre_usuario):
 
     if rol_usuario in ["Administrador Principal", "Recepcionista", "Personal Operativo"]:
         add_menu_btn("Inventario", lambda: vista_inventario(frame_contenido))
-
     ctk.CTkLabel(frame_lateral, text="").pack(expand=True)
 
     # Botón exclusivo de administración técnica

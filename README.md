@@ -4,27 +4,27 @@ SIGE es una solución tecnológica desarrollada en Python diseñada para automat
 
 ---
 
-## 🎯 Alcance de la Herramienta
+##  Alcance de la Herramienta
 
-### 🏥 Gestión Clínica
+### Gestión Clínica
 *   **Bitácora Médica:** Seguimiento de protocolos preventivos como herrajes y vacunas con historial clínico persistente.
 *   **Sistema de Semáforo:** Indicadores visuales inteligentes sobre el estado de salud y alertas automáticas de vencimientos.
 *   **Generación de Recetas:** Exportación de raciones, tratamientos e indicaciones médicas en archivos de texto (.txt).
 *   **Calendario Interactivo:** Visualización de la agenda médica con capacidad de reagendar o completar citas con un clic.
 
-### 🐴 Control Operativo y de Inventario
+### Control Operativo y de Inventario
 *   **Mapa de Caballerizas:** Grid dinámico para la asignación, monitoreo y gestión física de boxes (Mapa de Caballerizas).
 *   **Gestión de Stock:** Control riguroso de suministros con alertas automáticas de existencias críticas (≤ 5 unidades).
 *   **Seguimiento de Entrenamiento:** Registro de asistencia y progreso por etapas (de Iniciación a Avanzado) y nivel de arrendamiento.
 *   **Gestión de Alimentación:** Descuento automático de inventario al suministrar raciones diarias.
 
-### 👥 CRM y Gestión de Clientes
+### CRM y Gestión de Clientes
 *   **Directorio Profesional:** Gestión de propietarios y visualización de caballos asociados.
 *   **Panel CRM Integrado:** Seguimiento de notas de operación, estados de cuenta individuales y términos de pensión.
 
 ---
 
-## 🏗️ Arquitectura Técnica
+##  Arquitectura Técnica
 
 El sistema ha sido diseñado bajo estándares de **Clean Code** y **Programación Orientada a Objetos (POO)** para garantizar escalabilidad:
 
@@ -35,7 +35,7 @@ El sistema ha sido diseñado bajo estándares de **Clean Code** y **Programació
 
 ---
 
-## 🔐 Control de Accesos (Roles - RBAC)
+## Control de Accesos (Roles - RBAC)
 
 SIGE garantiza la integridad de los datos mediante un sistema de Roles basado en Permisos:
 
@@ -45,7 +45,7 @@ SIGE garantiza la integridad de los datos mediante un sistema de Roles basado en
 
 ---
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 *   `frontend.py`: Controlador de la interfaz gráfica y flujo de navegación.
 *   `backend.py`: Motor del sistema, definiciones de clases y persistencia.
@@ -55,7 +55,7 @@ SIGE garantiza la integridad de los datos mediante un sistema de Roles basado en
 
 ---
 
-## ⚙️ Instalación y Uso
+## Instalación y Uso
 
 1. **Requisitos:** Python 3.10 o superior.
 2. **Dependencias:**

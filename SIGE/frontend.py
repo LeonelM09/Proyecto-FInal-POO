@@ -867,7 +867,7 @@ def sub_vista_equinos_crear(frame_contenido):
     limpiar_contenedor(frame_contenido)
     global ruta_imagen_temporal; ruta_imagen_temporal = None 
 
-    panel_fields = ctk.CTkFrame(frame_contenido, fg_color="transparent")
+    panel_fields = ctk.CTkScrollableFrame(frame_contenido, fg_color="transparent")
     panel_fields.pack(side="left", fill="both", expand=True, padx=20)
 
     # Carga de catálogos desde el backend
@@ -1767,6 +1767,13 @@ def vista_finanzas(frame_contenido):
         # Cálculo de métricas financieras (Aritmética de negocio)
         total_recaudado = sum(p["monto"] for p in finanzas if p["estado"] == "Pagado")
         cuentas_por_cobrar = sum(p["monto"] for p in finanzas if p["estado"] == "Pendiente")
+        
+        #Cálculo por métricas generales
+        servicios_stars={}
+        for p in finanzas:
+            if p["estado"]=="Pagado":
+                tipo=p.get("servicio", "General")
+                servicios_stars[tipo]=servicios_stars.get(tipo,0)+p["monto"]
 
         f_cards = ctk.CTkFrame(parent, fg_color="transparent")
         f_cards.pack(pady=20, fill="x")
@@ -1782,6 +1789,20 @@ def vista_finanzas(frame_contenido):
             ctk.CTkLabel(card, text=val, font=("Roboto", 32, "bold")).pack(pady=(0, 15))
         
         f_cards.columnconfigure((0, 1), weight=1)
+
+        #Bloque visual de ingresos por servicio
+        if servicios_stars:
+            f_servicios=ctk.CTkFrame(parent, fg_color=COLOR_FONDO, corner_radius=15, border_width=1, border_color="#334155")
+            f_servicios.pack(fill="x", padx=20, pady=10)
+            ctk.CTkLabel(f_servicios, text="INGRESOS POR SERVICIO", font=("Roboto", 12, "bold"), text_color="#9ca3af").pack(pady=5)
+
+            f_grid_serv = ctk.CTkFrame(f_servicios, fg_color="transparent")
+            f_grid_serv.pack(pady=(0, 10))
+            
+            for i, (serv, monto) in enumerate(servicios_stars.items()):
+                lbl = ctk.CTkLabel(f_grid_serv, text=f"{serv}: ${monto:,.2f}", font=("Roboto", 12, "bold"), 
+                                   fg_color="#1e293b", corner_radius=10, padx=15, pady=5)
+                lbl.grid(row=0, column=i, padx=10)
 
         # Renderización de gráfica mediante Matplotlib integrado en Tkinter
         f_grafica = ctk.CTkFrame(parent, fg_color=COLOR_FONDO, corner_radius=15, border_width=1, border_color="#334155")
@@ -1807,7 +1828,6 @@ def vista_finanzas(frame_contenido):
                         plt.close(fig)
         except: 
             pass
-
     def subvista_registrar_pago(parent):
         """Formulario para la captura de nuevos movimientos financieros."""
         limpiar_contenedor(parent)

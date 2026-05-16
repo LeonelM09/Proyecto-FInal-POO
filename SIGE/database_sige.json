@@ -31,9 +31,16 @@
         },
         {
             "id_cliente": "CL-002",
-            "nom_completo": "Annie de Matos",
+            "nom_completo": "Annie Juarez",
             "contacto": "123",
             "term_pension": "Pensi\u00f3n completa"
+        },
+        {
+            "id_cliente": "CL-001",
+            "nom_completo": "Juan Perez",
+            "contacto": "555-1234",
+            "term_pension": "Pensi\u00f3n B\u00e1sica",
+            "notas": ""
         }
     ],
     "equinos": [
@@ -44,8 +51,8 @@
             "raza": "Pura Sangre",
             "cab_asig": "C-12",
             "etapa": "Iniciaci\u00f3n",
-            "ruta_imagen": "c:\\Users\\Matos\\OneDrive\\Escritorio\\SIGE\\imagenes_equinos\\rel\u00e1mpago.jpg",
-            "sexo": "Castrado",
+            "ruta_imagen": "c:\\Users\\annie\\Downloads\\Python\\OOP- Progra Avanzada\\Proyecto_final\\Sige-Actualizado\\imagenes_equinos\\rel\u00e1mpago.jpg",
+            "sexo": "Macho",
             "pelaje": "Alaz\u00e1n",
             "nacimiento": "12/05/2018",
             "microchip": "MX-123456",
@@ -66,10 +73,15 @@
                     "fecha": "2026-05-01",
                     "tipo": "Vacuna",
                     "desc": "Tratamiento programado (01/05/2026) realizado exitosamente."
+                },
+                {
+                    "fecha": "2026-05-19",
+                    "tipo": "Herraje",
+                    "desc": "Tratamiento programado (19/05/2026) realizado exitosamente."
                 }
             ],
             "fechas_medicas": {
-                "Herraje": "18/05/2026",
+                "Herraje": "29/06/2026",
                 "Desparasitaci\u00f3n": "10/06/2026",
                 "Odontolog\u00eda": "02/11/2026",
                 "Vacuna": "14/05/2027"
@@ -82,8 +94,8 @@
             "raza": "Mixteco",
             "cab_asig": "C-11",
             "etapa": "Iniciaci\u00f3n",
-            "ruta_imagen": "c:\\Users\\Matos\\OneDrive\\Escritorio\\SIGE\\imagenes_equinos\\yolo.jpeg",
-            "sexo": "Yegua",
+            "ruta_imagen": "c:\\Users\\annie\\Downloads\\Python\\OOP- Progra Avanzada\\Proyecto_final\\Sige-Actualizado\\imagenes_equinos\\yolo.jpeg",
+            "sexo": "Hembra",
             "pelaje": "Gris",
             "nacimiento": "01/01/2015",
             "microchip": "Sin microchip",
@@ -114,8 +126,8 @@
             "raza": "Pura Sangre",
             "cab_asig": "C-14",
             "etapa": "Iniciaci\u00f3n",
-            "ruta_imagen": "c:\\Users\\Matos\\OneDrive\\Escritorio\\SIGE\\imagenes_equinos\\juan.jpg",
-            "sexo": "Caballo",
+            "ruta_imagen": "c:\\Users\\annie\\Downloads\\Python\\OOP- Progra Avanzada\\Proyecto_final\\Sige-Actualizado\\imagenes_equinos\\juan.jpg",
+            "sexo": "Castrado",
             "pelaje": "Zaino",
             "nacimiento": "15/03/2019",
             "microchip": "MX-555444",
@@ -126,9 +138,15 @@
                 "2026-05-01"
             ],
             "alimentacion": "Pasto (Ma\u00f1ana/Tarde) y 2kg de grano est\u00e1ndar.",
-            "historial_medico": [],
+            "historial_medico": [
+                {
+                    "fecha": "2026-05-15",
+                    "tipo": "Herraje",
+                    "desc": "Tratamiento programado (15/05/2026) realizado exitosamente."
+                }
+            ],
             "fechas_medicas": {
-                "Herraje": "16/05/2026",
+                "Herraje": "29/06/2026",
                 "Desparasitaci\u00f3n": "08/06/2026",
                 "Odontolog\u00eda": "31/10/2026"
             }
@@ -138,12 +156,12 @@
             "id_cliente": "CL-002",
             "nombre": "Suzume",
             "raza": "Gato",
-            "cab_asig": "C -13",
+            "cab_asig": "C-13",
             "etapa": "Ninguna",
-            "ruta_imagen": "c:\\Users\\Matos\\OneDrive\\Escritorio\\SIGE\\imagenes_equinos\\suzume.jpeg",
-            "sexo": "Yegua",
-            "pelaje": "Atigrado",
-            "nacimiento": "20/05/2020",
+            "ruta_imagen": "c:\\Users\\annie\\Downloads\\Python\\OOP- Progra Avanzada\\Proyecto_final\\Sige-Actualizado\\imagenes_equinos\\suzume.jpeg",
+            "sexo": "Macho",
+            "pelaje": "Siames",
+            "nacimiento": "27/05/2024",
             "microchip": "Ninguno",
             "especie": "Otro",
             "id_registro": "REG-001",
@@ -163,7 +181,7 @@
                 "Odontolog\u00eda": "08/11/2026",
                 "Vacuna": "02/09/2027"
             }
-        }
+                }
     ],
     "bitacoras": [],
     "finanzas": [
@@ -200,8 +218,8 @@
             "id_pago": "PAG-5435",
             "id_cliente": "CL-002",
             "monto": 2000.0,
-            "fecha_pago": "2026-05-13",
-            "estado": "Pendiente",
+            "fecha_pago": "2026-05-15",
+            "estado": "Pagado",
             "servicio": "Venta de Insumos"
         },
         {
@@ -211,6 +229,14 @@
             "fecha_pago": "2026-05-13",
             "estado": "Pagado",
             "servicio": "Venta de Insumos"
+        },
+        {
+            "id_pago": "PAG-5828",
+            "id_cliente": "CL-002",
+            "monto": 1000.0,
+            "fecha_pago": "2026-05-15",
+            "estado": "Pagado",
+            "servicio": "Entrenamiento"
         }
     ],
     "caballerizas": [],
@@ -218,22 +244,22 @@
     "inventario": [
         {
             "nombre": "Pacas de Pasto (Avena/Alfalfa)",
-            "cantidad": 45,
+            "cantidad": 40,
             "caducidad": "N/A",
             "ultimo_abastecimiento": "13/05/2026",
             "descripcion": "Pasto de alta calidad para alimentaci\u00f3n diaria."
         },
         {
             "nombre": "Grano est\u00e1ndar (Bultos 20kg)",
-            "cantidad": 15,
-            "caducidad": "15/08/2026",
+            "cantidad": 14,
+            "caducidad": "15/05/2026",
             "ultimo_abastecimiento": "12/05/2026",
             "descripcion": "Mezcla de granos balanceada."
         },
         {
             "nombre": "Suplemento Vitam\u00ednico (Bote 5kg)",
             "cantidad": 12,
-            "caducidad": "20/12/2026",
+            "caducidad": "16/05/2026",
             "ultimo_abastecimiento": "10/05/2026",
             "descripcion": "Suplemento para mejorar el rendimiento."
         },
@@ -295,7 +321,7 @@
         },
         {
             "nombre": "Sedante Suave (Uso Veterinario)",
-            "cantidad": 4,
+            "cantidad": 15,
             "caducidad": "05/05/2028",
             "ultimo_abastecimiento": "10/05/2026",
             "descripcion": "Para procedimientos m\u00e9dicos menores."

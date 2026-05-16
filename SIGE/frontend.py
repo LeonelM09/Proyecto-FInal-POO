@@ -1,4 +1,4 @@
-import customtkinter as ctk
+import customtkinter as ctk 
 import tkinter as tk
 from tkinter import ttk, messagebox, filedialog
 from PIL import Image, ImageTk
@@ -924,7 +924,7 @@ def sub_vista_equinos_crear(frame_contenido):
     combo_spec.configure(command=actualizar_datos_especie)
 
     # Atributos morfológicos y de identificación
-    combo_sex = add_form_row(f_grid, 8, "Sexo:", "combo", values=["Caballo", "Yegua", "Castrado"])
+    combo_sex = add_form_row(f_grid, 8, "Sexo:", "combo", values=["Hembra", "Macho", "Castrado"])
     entry_coat = add_form_row(f_grid, 10, "Pelaje / Color:", "entry", placeholder="Ej. Alazán, Zaino...")
     entry_dob = add_form_row(f_grid, 12, "Fecha Nacimiento / Edad:", "entry", placeholder="DD/MM/AAAA o Edad")
     entry_chip = add_form_row(f_grid, 14, "Microchip:", "entry", placeholder="Poner 'Ninguno' si no tiene")

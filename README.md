@@ -71,8 +71,5 @@ SIGE garantiza la integridad de los datos mediante un sistema de Roles basado en
 **Estefania Juárez Romero**
 * Estudiantes de Ingeniería en Ciencias de la Computación
 
-## Licencia
-Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE.md](LICENSE.md) para detalles.
-
 ---
 **SIGE - Transformando la tradición ecuestre con tecnología de vanguardia.**

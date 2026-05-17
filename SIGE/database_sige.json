@@ -31,16 +31,9 @@
         },
         {
             "id_cliente": "CL-002",
-            "nom_completo": "Annie Juarez",
+            "nom_completo": "Annie de Matos",
             "contacto": "123",
             "term_pension": "Pensi\u00f3n completa"
-        },
-        {
-            "id_cliente": "CL-001",
-            "nom_completo": "Juan Perez",
-            "contacto": "555-1234",
-            "term_pension": "Pensi\u00f3n B\u00e1sica",
-            "notas": ""
         }
     ],
     "equinos": [
